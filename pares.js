@@ -7,6 +7,22 @@ $(document).ready(function(){
         var estado = $(this).attr('data-estado')
 
         if(estado == "0"){
+
+            if(carta1 != "" && carta2 != ""){
+                console.log("Las cartas son diferentes")
+                if(carta1.attr('data-id') != carta2.attr('data-id')){
+                    console.log("Tapa cartas diferentes")
+                    carta1.attr('src', 'imagenes/imagen.jpg')
+                    carta2.attr('src', 'imagenes/imagen.jpg')
+                }else{
+                    console.log("Las cartas son iguales")
+                    carta1.attr('data-estado', '1')
+                    carta2.attr('data-estado', '1')
+                }
+            }
+            
+            console.log("Estado de la carta: " + estado)
+
             if(carta1 == ""){
                 carta1 = $(this);
                 carta1.attr('src', 'imagenes/' + nombre_imagen)
@@ -18,14 +34,6 @@ $(document).ready(function(){
             }
         }
 
-        if(carta1 != "" && carta2 != ""){
-            if(carta1.attr('data-id') == carta2.attr('data-id')){
-                par = true
-                total_pares++
-                $("#total_pares").html(total_pares);
-                carta1 = ""
-                carta2 = ""
-            }
-        }
+        
     });
 });
