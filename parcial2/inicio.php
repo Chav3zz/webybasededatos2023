@@ -16,7 +16,7 @@
         // $datos = $conexion -> query($sql);
     ?>
 
-    <div class="container">
+    <div class="container card mt-4 p-4">
         <div class="row">
             <div class="col-12 text-center">
                 <h2>Bienvenido al sistema de gestión de alumnos</h2>
