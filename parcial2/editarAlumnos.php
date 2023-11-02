@@ -26,19 +26,19 @@
                     <input type="hidden" name="id" value="<?php echo $alumno["id"]; ?>">
                     <div class="form-group">
                         <label for="">Nombre:</label>
-                        <input type="text" name="nombre" value="<?php echo $alumno["nombre"]; ?> class="form-control" placeholder="Teclea tu nombre" required>
+                        <input type="text" name="nombre" value="<?php echo $alumno["nombre"]; ?>" class="form-control" placeholder="Teclea tu nombre" required>
                     </div>
                     <div class="form-group">
                         <label for="">Número de control:</label>
-                        <input type="text" name="nc" value="<?php echo $alumno["numero_control"]; ?> class="form-control" placeholder="Teclea tu número de control" required>
+                        <input type="text" name="nc" value="<?php echo $alumno["numero_control"]; ?>" class="form-control" placeholder="Teclea tu número de control" required>
                     </div>
                     <div class="form-group">
                         <label for="">Semestre:</label>
-                        <input type="number" name="semestre" value="<?php echo $alumno["semestre"]; ?> class="form-control" placeholder="Teclea tu semestre" required>
+                        <input type="number" name="semestre" value="<?php echo $alumno["semestre"]; ?>" class="form-control" placeholder="Teclea tu semestre" required>
                     </div>
                     <div class="form-group">
                         <label for="">Edad:</label>
-                        <input type="number" name="edad" value="<?php echo $alumno["edad"]; ?> class="form-control" placeholder="Teclea tu edad" required>
+                        <input type="number" name="edad" value="<?php echo $alumno["edad"]; ?>" class="form-control" placeholder="Teclea tu edad" required>
                     </div>
                     <div class="form-group">
                         <label for="">Turno:</label>
@@ -52,8 +52,8 @@
                     <div class="form-group">
                         <label for="">Sexo:</label>
                         <select name="sexo" class="form-control" required>
-                            <option value="">Selecciona el sexo</option>
                             <option value="<?php echo $alumno["sexo"]; ?>"><?php echo $alumno["sexo"]; ?></option>
+                            <option value="">Selecciona el sexo</option>
                             <option value="0">Femenino</option>
                             <option value="1">Masculino</option>
                             <option value="2">Prefiero no responder</option>
