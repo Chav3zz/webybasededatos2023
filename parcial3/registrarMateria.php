@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 card p-4">
-                <form action="">
+                <form action="guardarMateria.php" method="post">
                     <div class="form-group">
                         <label for="nombre">Nombre:</label>
                         <input type="text" class="form-control" name="nombre" placeholder="Teclea la materia">
@@ -32,7 +32,7 @@
                             <option value="contabilidad">Contabilidad</option>
                             <option value="ofimatica">Ofimática</option>
                         </select>
-                    </div>
+                    </div><br>
                     <div>
                         <input type="submit" class="btn btn-primary" value="Registrar">
                         <a href="consultarMaterias.php" class="btn btn-danger">Cancelar</a>

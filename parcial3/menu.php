@@ -27,7 +27,7 @@
 			</a>
 			<ul class="dropdown-menu">
 				<li><a class="dropdown-item" href="inicio.php">Inicio</a></li>
-				<li><a class="dropdown-item" href="consultarAlumnos.php">Consultar materias</a></li>
+				<li><a class="dropdown-item" href="consultarMaterias.php">Consultar materias</a></li>
 				<li><hr class="dropdown-divider"></li>
 				<li><a class="dropdown-item" href="registrarMateria.php">Registrar materia</a></li>
 			</ul>
