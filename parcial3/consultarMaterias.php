@@ -38,8 +38,8 @@
                                         <td><?php echo $registro["semestre"]; ?></td>
                                         <td><?php echo $registro["especialidad"]; ?></td>
                                         <td>
-                                            <a href="" class="btn btn-xs btn-primary">Editar</a>
-                                            <a href="" class="btn btn-xs btn-danger">Eliminar</a>
+                                            <a href="editarMaterias.php?id=<?php echo $registro["id"];?>" class="btn btn-xs btn-primary">Editar</a>
+                                            <a href="eliminarMateria.php?id=<?php echo $registro["id"];?>" class="btn btn-xs btn-danger">Eliminar</a>
                                         </td>
                                     </tr>
                                 <?php }?>
