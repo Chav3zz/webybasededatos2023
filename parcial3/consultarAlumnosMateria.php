@@ -21,7 +21,7 @@
         <?php if($datos->num_rows = 0){ ?>
             <?php while($registro = $datos->fetch_assoc()){ 
                 $id = $registro["id"];
-                $sql2 = "SELECT a., m.nombre AS materia_nombre FROM alumnos a INNER JOIN alumno_materias am ON a.id = am.alumnos_id INNER JOIN materias m ON m.id = am.materia_id WHERE a.id=". $id;
+                $sql2 = "SELECT a.*, m.nombre AS materia_nombre FROM alumnos a INNER JOIN alumno_materias am ON a.id = am.alumnos_id INNER JOIN materias m ON m.id = am.materia_id WHERE a.id=". $id;
                 $datos2 = $conexion->query($sql2);
             ?>
                 <div class="card">
